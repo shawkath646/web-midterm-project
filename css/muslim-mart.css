@@ -1,0 +1,404 @@
+section {
+    padding: 60px 0;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.section-title h2 {
+    display: inline-block;
+    background-color: #f5f6fa;
+    padding: 0 20px;
+    position: relative;
+    z-index: 1;
+    font-size: 2rem;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #ddd;
+    z-index: 0;
+}
+
+.muslim-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1519817650390-64a93db51149?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.muslim-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.muslim-hero p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto 30px;
+    color: #eee;
+}
+
+.product-categories {
+    background-color: white;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.category-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: var(--transition);
+    position: relative;
+    border: 1px solid #eee;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.category-img {
+    height: 180px;
+    overflow: hidden;
+}
+
+.category-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.category-card:hover .category-img img {
+    transform: scale(1.05);
+}
+
+.category-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.category-info h3 {
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.halal-restaurants {
+    background-color: #f5f6fa;
+}
+
+.restaurant-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.restaurant-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: var(--transition);
+}
+
+.restaurant-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.restaurant-img {
+    height: 180px;
+    overflow: hidden;
+}
+
+.restaurant-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.restaurant-info {
+    padding: 20px;
+}
+
+.restaurant-info h3 {
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.restaurant-meta {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    color: #666;
+    font-size: 14px;
+}
+
+.restaurant-meta i {
+    margin-right: 8px;
+    color: var(--accent-color);
+}
+
+.restaurant-rating {
+    display: flex;
+    align-items: center;
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+.mosques-section {
+    background-color: white;
+}
+
+.mosque-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.mosque-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: var(--transition);
+    border: 1px solid #eee;
+}
+
+.mosque-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.mosque-img {
+    height: 180px;
+    overflow: hidden;
+}
+
+.mosque-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mosque-info {
+    padding: 20px;
+}
+
+.mosque-info h3 {
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.mosque-meta {
+    margin-bottom: 10px;
+    color: #666;
+    font-size: 14px;
+}
+
+.mosque-meta i {
+    margin-right: 8px;
+    color: var(--accent-color);
+}
+
+.prayer-times {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
+
+.prayer-times h4 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: var(--primary-color);
+}
+
+.prayer-times ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.prayer-times li {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.featured-products {
+    background-color: #f5f6fa;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.product-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: var(--transition);
+    position: relative;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.product-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+    z-index: 1;
+}
+
+.product-img {
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+.product-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.product-card:hover .product-img img {
+    transform: scale(1.05);
+}
+
+.product-actions {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transform: translateX(50px);
+    opacity: 0;
+    transition: var(--transition);
+}
+
+.product-card:hover .product-actions {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.product-actions button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: white;
+    color: var(--dark-color);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.product-actions button:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.product-info {
+    padding: 15px;
+}
+
+.product-info h3 {
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.product-price {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.current-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.old-price {
+    font-size: 14px;
+    color: #999;
+    text-decoration: line-through;
+}
+
+.product-rating {
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .muslim-hero h1 {
+        font-size: 2rem;
+    }
+
+    .muslim-hero p {
+        font-size: 1rem;
+    }
+
+    .category-grid,
+    .restaurant-grid,
+    .mosque-grid,
+    .product-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
+
+@media (max-width: 576px) {
+    .category-grid,
+    .restaurant-grid,
+    .mosque-grid,
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+}
