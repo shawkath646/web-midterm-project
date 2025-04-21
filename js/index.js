@@ -28,7 +28,6 @@ function addToCart() {
     cartCountElement.textContent = cartCount;
 
     // Adds a scale animation to visually indicate a change
-    // This is done directly through JS, but it's more maintainable to use CSS classes and transitions
     cartCountElement.style.transform = 'scale(1.5)';
 
     // Restores the original scale after a short delay
@@ -37,5 +36,5 @@ function addToCart() {
     }, 300);
 
     // Note: The count is not persisted. On page reload, it resets to 0.
-    // A real application would use localStorage or server-side storage.
+    // We need localStorage or server-side storage.
 }
