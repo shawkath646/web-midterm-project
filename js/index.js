@@ -9,7 +9,7 @@ mobileMenuBtn.addEventListener('click', () => {
 
     // Dynamically changes the button icon based on the menu state
     // Using innerHTML allows inserting raw HTML (Font Awesome icons)
-    // ⚠️ Caution: innerHTML can be unsafe if the content is not static or trusted
+    //  Caution: innerHTML can be unsafe if the content is not static or trusted
     mobileMenuBtn.innerHTML = navLinks.classList.contains('active')
         ? '<i class="fas fa-times"></i>'  // Close icon when menu is active
         : '<i class="fas fa-bars"></i>';  // Hamburger icon when menu is inactive
